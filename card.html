@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css">
+  <title>Navbar</title>
+</head>
+<body>
+  
+  <nav class="navbar has-shadow is-primary">
+    <!-- Logo / brand -->
+    <div class="navbar-brand">
+      <a href="#" class="navbar-item" >
+        <img src="./assets/avatar.png" alt="logo" style="max-height:70px;" >
+      </a>
+
+      <a class="navbar-burger" id="burger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </a>
+
+    </div>
+
+    <div class="navbar-menu" id="nav-links">
+      <div class="navbar-end">
+        <a href="#" class="navbar-item">Item 1</a>
+        <a href="#" class="navbar-item">Item 2</a>
+        <a href="#" class="navbar-item">Item 3</a>
+      </div>
+    </div>
+
+  </nav>
+
+  <!-- Breadcrumbs -->
+  <div class="section pt-4 pb-0">
+    <nav class="breadcrumb has-arrow-separator">
+      <ul class="container">
+        <li><a class="has-text-grey" href="#">Item 1</a></li>
+        <li><a class="has-text-grey" href="#">Item 1.1</a></li>
+        <li class="is-active"><a href="#">item 1.1.1</a></li>
+      </ul>
+    </nav>
+  </div>
+
+  <!-- product info -->
+  <section class="section">
+    <div class="container">
+      
+      <div class="columns is-vcentered is-multiline">
+
+        <div class="column is-6-tablet is-3-desktop">
+          <!-- resposive clases -->
+          <!-- Son mobile first las clases los estilos se heredan hacia arriba -->
+          <h1 class="is-size-3-mobile is-size-1-desktop title">Item 1</h1>
+          <h2 class="is-size-3-mobile is-size-2-desktop subtitle">Item 1 product</h2>
+          <p>Officiis modi quas suscipit provident dolorem et eum perspiciatis. Deserunt nesciunt nulla est vero velit rerum sit cumque dolorem. Ipsa eos ducimus. Voluptate aut rem ut magni.</p>
+        </div>
+
+        <div class="column is-6-tablet is-5-desktop has-text-centered">
+          <img src="./assets/avatar.png" class="px-6" alt="producto">
+        </div>
+
+        <div class="column is-12-tablet is-4-desktop">
+          <div class="is-size-4 mb-4">$10.99</div>
+          <p class="mb-4">Fugit mollitia nulla rerum error nesciunt sequi est rem occaecati. Explicabo qui eveniet minima voluptas et. Tempore odit delectus ut nam fugit et nihil.</p>
+          
+          <!-- button -->
+          <button class="button">Add</button>
+        </div>
+
+      </div>
+
+    </div>
+    
+  </section>
+
+  <section class="section">
+    <div class="container">
+
+      <!-- is-8 is-variable manipula el gap entre columnas -->
+      <div class="columns is-8 is-variable">
+
+        <div class="column is-7-tablet">
+          <!-- tabbed content -->
+          <div class="tabs is-boxed">
+            <ul>
+              <li class="is-active" data-target="Item-1" ><a>Item 1</a></li>
+              <li data-target="Item-2"><a>Item 2</a></li>
+              <li data-target="Item-3" ><a>Item 3</a></li>
+              <li data-target="Item-4" ><a>Item 4</a></li>
+              <li data-target="Item-5" ><a>Item 5</a></li>
+            </ul>
+          </div>
+          <div class="px-2" id="tab-content">
+            <div id="Item-1">
+              <h3 class="is-size-5 title">Item 1</h3>
+              <p>Ab sunt itaque. Sunt cupiditate et natus. Rerum et cumque non nulla voluptatem est.</p>
+            </div>
+            <div id="Item-2" class="is-hidden">
+              <h3 class="is-size-5 title">Item 2</h3>
+              <p>Ab sunt itaque. Sunt cupiditate et natus. Rerum et cumque non nulla voluptatem est.</p>
+            </div>
+            <div id="Item-3" class="is-hidden">
+              <h3 class="is-size-5 title">Item 3</h3>
+              <p>Ab sunt itaque. Sunt cupiditate et natus. Rerum et cumque non nulla voluptatem est.</p>
+            </div>
+            <div id="Item-4" class="is-hidden"> 
+              <h3 class="is-size-5 title">Item 4</h3>
+              <p>Ab sunt itaque. Sunt cupiditate et natus. Rerum et cumque non nulla voluptatem est.</p>
+            </div>
+            <div id="Item-5" class="is-hidden">
+              <h3 class="is-size-5 title">Item 5</h3>
+              <p>Ab sunt itaque. Sunt cupiditate et natus. Rerum et cumque non nulla voluptatem est.</p>
+            </div>
+          </div>
+
+        </div>
+        <div class="column is-5-tablet">
+          <!-- messages box -->
+          <div class="message is-danger">
+            <div class="message-header">
+              <p>odio blanditiis alias</p>
+            </div>
+            <div class="message-body">
+              <p>Nam est consequatur aut quia. Perferendis ad repudiandae aspernatur possimus suscipit odit consequatur in. Ab distinctio totam aliquid perferendis. Ipsum temporibus voluptates qui tempora maiores error commodi. Deleniti provident ipsum quas perferendis explicabo autem debitis. Iste adipisci reiciendis eaque quia perspiciatis.</p>
+              <div class="has-text-centered">
+                <button class="button is-rounded mt-5">Sign Up</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- card -->
+  <section class="section">
+    <div class="container">
+      <h3 class="title has-text-centered is-size-4">Fugiat etut</h3>
+      <div class="columns mt-5 is-8 is-variable is-centered">
+        <div class="column is-4-tablet is-3-desktop">
+          <div class="card">
+            <div class="card-image has-text-centered px-6">
+              <img src="./assets/avatar.png" alt="imagen">
+            </div>
+            <div class="card-content">
+              <p>$433.00</p>
+              <p class="title is-size-5">voluptatibus sit</p>
+            </div>
+            <footer class="card-footer">
+              <p class="card-footer-item">
+                <a href="" class="has-text-grey">quod</a>
+              </p>
+              <!-- <p class="card-footer-item">
+                <a href="" class="has-text-grey">quibusdam</a>
+              </p> -->
+            </footer>
+          </div>
+        </div>
+
+        <div class="column is-4-tablet is-3-desktop">
+          <div class="card">
+            <div class="card-image has-text-centered px-6">
+              <img src="./assets/avatar.png" alt="imagen">
+            </div>
+            <div class="card-content">
+              <p>$433.00</p>
+              <p class="title is-size-5">voluptatibus sit</p>
+            </div>
+            <footer class="card-footer">
+              <p class="card-footer-item">
+                <a href="" class="has-text-grey">quod</a>
+              </p>
+              <!-- <p class="card-footer-item">
+                <a href="" class="has-text-grey">quibusdam</a>
+              </p> -->
+            </footer>
+          </div>
+        </div>
+
+        <div class="column is-4-tablet is-3-desktop">
+          <div class="card">
+            <div class="card-image has-text-centered px-6">
+              <img src="./assets/avatar.png" alt="imagen">
+            </div>
+            <div class="card-content">
+              <p>$433.00</p>
+              <p class="title is-size-5">voluptatibus sit</p>
+            </div>
+            <footer class="card-footer">
+              <p class="card-footer-item">
+                <a href="" class="has-text-grey">quod</a>
+              </p>
+              <!-- <p class="card-footer-item">
+                <a href="" class="has-text-grey">quibusdam</a>
+              </p> -->
+            </footer>
+          </div>
+        </div>
+        
+      </div>
+    </div>
+  </section>
+
+  <script src="./index.js"></script>
+</body>
+</html>
